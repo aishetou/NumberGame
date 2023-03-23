@@ -47,7 +47,8 @@ const NumberGame = () => {
     <div className="bg-blue-400 bg-opacity-70  rounded py-4" >
 
      {playAgain?
-      <> <div className=" flex flex-col items-center justify-center px-20 py-20" >
+      <> 
+      <div className=" flex flex-col items-center justify-center px-20 py-20" >
      <p className="text-2xl text-purple-100 font-sans-serif "> You win !!  </p>
      <div>
      <img src={Spongehappy} alt="SpongeBob" className="w-24 mt-8 h-24 object-contain animate-bounce " /> </div>
@@ -59,7 +60,8 @@ const NumberGame = () => {
    >
     Play Again
    </motion.button>
-  </div>  </>
+  </div> 
+    </>
        :
       <>
      <h1 className="text-3xl text-center  text-blue-900 mb-8 ">Number Game</h1>
@@ -76,9 +78,11 @@ const NumberGame = () => {
     required
     placeholder="guess here"
     className="w-32   font-semibold 
-     text-sm text-purple-900 rounded-md px-3 py-1 text-center placeholder-gray-400
-     bg-white border border-purple-400 mr-2 
-     hover:border-purple-600 focus:text-lg focus:placeholder-text-sm focus:placeholder-gray-300 focus:outline-none focus:ring focus:ring-violet-300 transition ease-in-out duration-150"
+   text-sm text-purple-900 rounded-md px-3 py-1 text-center placeholder-gray-400
+   bg-white border border-purple-400 mr-2 
+   hover:border-purple-600 focus:text-lg focus:placeholder-text-sm
+   focus:placeholder-gray-300 focus:outline-none focus:ring focus:ring-violet-300 
+    transition ease-in-out duration-150"
     value={guess}
     min="1"
     max="100"
